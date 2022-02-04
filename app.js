@@ -10,6 +10,7 @@ card.addEventListener("mousedown", (e) => {
 });
 
 document.addEventListener("mouseup", (e) => {
+  const target = e.target;
   if (isDown) {
     card.classList.add("card-back");
     if (!isGetCardY(e)) {
@@ -29,11 +30,14 @@ document.addEventListener("mouseup", (e) => {
 function move(e) {
   if (isDown) {
     const cardY = e.pageY - mouseY;
+    let brightness = 0.2;
 
     if (!isGetCardY(e)) {
       card.style.transform = `translate(-50%, ${offsetY + cardY}px)`;
+      card.style.filter = `brightness(${(cardY / 400) * 0.8 + brightness})`;
     } else {
       card.style.transform = `translate(-50%, 400px)`;
+      card.style.filter = "brightness(1)";
     }
   }
 }

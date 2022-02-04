@@ -4,13 +4,22 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #fff;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 html {
   font-size: 50%;
+}
+
+body {
+  background-image: linear-gradient(
+      to top left,
+      rgba(13, 19, 33, 0.8),
+      rgba(62, 92, 118, 0.8)
+    ),
+    url(img/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
 }
 
 .drawer {
@@ -48,6 +57,7 @@ html {
   cursor: pointer;
   box-shadow: 0 0 0.5rem #3b5761;
   border-radius: 0.2rem;
+  filter: brightness(0.2);
 }
 
 .card-back {
@@ -59,14 +69,40 @@ html {
 }
 
 @keyframes get-card {
-  from {
+  0% {
+    filter: brightness(1);
     transform: translate(-50%, 400px);
   }
-  25% {
+  20% {
+    filter: brightness(1);
+    box-shadow: 0 0 5rem #fff;
     z-index: 10;
   }
-
-  to {
+  40% {
+    filter: brightness(2);
+    box-shadow: 0 0 5rem #fff;
+    box-shadow: 0 0 10rem #fff;
+    box-shadow: 0 0 15rem #fff;
+  }
+  60% {
+    filter: brightness(5);
+    box-shadow: 0 0 5rem #fff;
+    box-shadow: 0 0 10rem #fff;
+    box-shadow: 0 0 15rem #fff;
+    box-shadow: 0 0 20rem #fff;
+    box-shadow: 0 0 25rem #fff;
+    box-shadow: 0 0 30rem #fff;
+  }
+  80% {
+    filter: brightness(2);
+    box-shadow: 0 0 5rem #fff;
+    box-shadow: 0 0 10rem #fff;
+    box-shadow: 0 0 15rem #fff;
+  }
+  100% {
+    filter: brightness(1);
+    box-shadow: 0 0 5rem #fff;
     transform: translate(-50%, 400px) rotate3d(0, 1, 0, 900deg);
+    z-index: 10;
   }
 }
