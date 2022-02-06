@@ -1,7 +1,13 @@
-let mouseY = 0;
-let offsetY = 0;
-let isDown = false;
+import {
+  incrementCustomProperty,
+  setCustomProperty,
+  getCustomProperty,
+} from "./updateCustomProperty.js";
+
 const card = document.querySelector(".card");
+const getCardY = 400;
+let mouseY = 0;
+let isDown = false;
 
 card.addEventListener("mousedown", (e) => {
   isDown = true;
@@ -9,40 +15,53 @@ card.addEventListener("mousedown", (e) => {
   document.addEventListener("mousemove", move);
 });
 
+function move(e) {
+  if (isDown) {
+    const cardY = e.pageY - mouseY;
+
+    if (!isGetCardY(e)) {
+      if (cardY < 0) {
+        setCustomProperty(card, "transform", `translate(-50%, 0px)`);
+        setCustomProperty(card, "filter", `brightness(0.4)`);
+      } else {
+        setCustomProperty(card, "transform", `translate(-50%, ${cardY}px)`);
+        setCustomProperty(
+          card,
+          "filter",
+          `brightness(${(cardY / getCardY) * 0.6 + 0.4})`
+        );
+      }
+    } else {
+      setCustomProperty(card, "transform", "translate(-50%, 400px)");
+      setCustomProperty(card, "filter", "brightness(1)");
+    }
+  }
+}
+
 document.addEventListener("mouseup", (e) => {
   const target = e.target;
   if (isDown) {
-    card.classList.add("card-back");
     if (!isGetCardY(e)) {
-      card.style.transform = `translate(-50%, 0px)`;
+      card.classList.add("card-back");
+      setCustomProperty(card, "transform", "translate(-50%, 0px)");
+      setTimeout(() => {
+        setCustomProperty(card, "filter", `brightness(0.4)`);
+        card.classList.remove("card-back");
+      }, 1000);
     } else {
-      card.style.transform = `translate(-50%, 400px) rotate3d(0, 1, 0, 1800deg);`;
+      setCustomProperty(
+        card,
+        "transform",
+        "translate(-50%, 400px) rotate3d(0, 1, 0, 1800deg)"
+      );
       card.classList.add("card-get");
     }
   }
   isDown = false;
   document.removeEventListener("mousemove", move);
-  setTimeout(() => {
-    card.classList.remove("card-back"), { once: true };
-  }, 1000);
 });
-
-function move(e) {
-  if (isDown) {
-    const cardY = e.pageY - mouseY;
-    let brightness = 0.2;
-
-    if (!isGetCardY(e)) {
-      card.style.transform = `translate(-50%, ${offsetY + cardY}px)`;
-      card.style.filter = `brightness(${(cardY / 400) * 0.8 + brightness})`;
-    } else {
-      card.style.transform = `translate(-50%, 400px)`;
-      card.style.filter = "brightness(1)";
-    }
-  }
-}
 
 function isGetCardY(e) {
   const cardY = e.pageY - mouseY;
-  return cardY >= 400 ? true : false;
+  return cardY >= getCardY ? true : false;
 }

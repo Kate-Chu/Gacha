@@ -57,11 +57,18 @@ body {
   cursor: pointer;
   box-shadow: 0 0 0.5rem #3b5761;
   border-radius: 0.2rem;
-  filter: brightness(0.2);
+  filter: brightness(0.4);
 }
 
 .card-back {
   transition: 1s;
+  animation: card-back-brightness 1s forwards;
+}
+
+@keyframes card-back-brightness {
+  to {
+    filter: brightness(0.4);
+  }
 }
 
 .card-get {
