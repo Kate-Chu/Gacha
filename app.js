@@ -42,11 +42,11 @@ document.addEventListener("mouseup", (e) => {
   const target = e.target;
   if (isDown) {
     if (!isGetCardY(e)) {
-      card.classList.add("card-back");
+      card.classList.add("card-return");
       setCustomProperty(card, "transform", "translate(-50%, 0px)");
       setTimeout(() => {
         setCustomProperty(card, "filter", `brightness(0.4)`);
-        card.classList.remove("card-back");
+        card.classList.remove("card-return");
       }, 1000);
     } else {
       setCustomProperty(

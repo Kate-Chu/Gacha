@@ -44,9 +44,9 @@ body {
   z-index: 5;
 }
 
-.card {
+.card.back {
   position: absolute;
-  top: -30%;
+  top: -20%;
   left: 50%;
   transform: translateX(-50%);
   width: 35rem;
@@ -60,7 +60,67 @@ body {
   filter: brightness(0.4);
 }
 
-.card-back {
+.card.back > .back-hidden {
+  opacity: 0;
+}
+
+.card > .back-hidden {
+  opacity: 1;
+}
+
+.card {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, 400px);
+  width: 35rem;
+  height: 55rem;
+  background-image: url("https://image.freepik.com/free-photo/top-view-arrangement-cornflowers_23-2148615244.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0.5rem #3b5761;
+  border-radius: 0.2rem;
+  filter: brightness(1);
+}
+
+.background-color {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  height: 45rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.4rem solid #dad6bf;
+}
+
+.quotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  width: 90%;
+  text-align: center;
+  height: 95%;
+  color: #333;
+  font-size: 2.2rem;
+}
+
+.bottom-line {
+  height: 2rem;
+  width: 5rem;
+  padding-top: 2rem;
+  border-bottom: 0.2rem solid #666;
+  margin-bottom: 1rem;
+}
+
+.author {
+  height: 3rem;
+  font-size: 1.7rem;
+}
+
+.card-return {
   transition: 1s;
   animation: card-back-brightness 1s forwards;
 }
