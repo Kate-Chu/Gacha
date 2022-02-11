@@ -75,7 +75,7 @@ body {
   transform: translate(-50%, 400px);
   width: 35rem;
   height: 55rem;
-  background-image: url("https://image.freepik.com/free-photo/top-view-arrangement-cornflowers_23-2148615244.jpg");
+  /* background-image: url("https://image.freepik.com/free-photo/top-view-arrangement-cornflowers_23-2148615244.jpg"); */
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 0.5rem #3b5761;
@@ -112,7 +112,7 @@ body {
   width: 5rem;
   padding-top: 2rem;
   border-bottom: 0.2rem solid #666;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .author {
@@ -141,18 +141,18 @@ body {
     transform: translate(-50%, 400px);
   }
   20% {
-    filter: brightness(1);
+    filter: brightness(2);
     box-shadow: 0 0 5rem #fff;
     z-index: 10;
   }
   40% {
-    filter: brightness(2);
+    filter: brightness(4.5);
     box-shadow: 0 0 5rem #fff;
     box-shadow: 0 0 10rem #fff;
     box-shadow: 0 0 15rem #fff;
   }
   60% {
-    filter: brightness(5);
+    filter: brightness(4.5);
     box-shadow: 0 0 5rem #fff;
     box-shadow: 0 0 10rem #fff;
     box-shadow: 0 0 15rem #fff;
@@ -169,7 +169,7 @@ body {
   100% {
     filter: brightness(1);
     box-shadow: 0 0 5rem #fff;
-    transform: translate(-50%, 400px) rotate3d(0, 1, 0, 900deg);
+    transform: translate(-50%, 400px) rotate3d(0, 1, 0, 720deg);
     z-index: 10;
   }
 }
