@@ -16,7 +16,6 @@ const backgroundImageData = [
   "https://image.freepik.com/free-photo/flat-lay-spring-gerbera-flowers-with-daisies-leaves_23-2148894246.jpg",
   "https://image.freepik.com/free-photo/top-view-spring-daisy-with-petals_23-2148894194.jpg",
   "https://image.freepik.com/free-photo/flat-lay-yellow-daisies_23-2148615336.jpg",
-  "https://image.freepik.com/free-photo/hand-drawn-chrysanthemum-floral-background_53876-103022.jpg",
   "https://image.freepik.com/free-photo/beautiful-cherry-blossom_181624-634.jpg",
   "https://image.freepik.com/free-photo/beautiful-cherry_1182-1029.jpg",
   "https://image.freepik.com/free-photo/beautiful-cherry-blossom_181624-668.jpg",
@@ -111,6 +110,6 @@ function isGetCardY(e) {
 }
 
 function getBackgroundImage() {
-  const randomBg = backgroundImageData[Math.floor(Math.random() * 10)];
+  const randomBg = backgroundImageData[Math.floor(Math.random() * 9)];
   return randomBg;
 }
