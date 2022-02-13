@@ -9,7 +9,7 @@
 
 <h3>Further Optimization</h3>
 <ul>
-  <li>touch event on mobile device"</li>
+  <li>touch event on mobile device</li>
   <li>only a pull a day</li>
   <li>add more card background images</li>
   </ul>
