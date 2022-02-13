@@ -1,6 +1,6 @@
-# Gacha# 1 Min Countdown Timer
+# Gacha
 
-![image](https://github.com/Kate-Chu/1_min_countdown_timer/blob/main/intro%20gif.gif)
+![image](https://github.com/Kate-Chu/Gacha/blob/main/img/intro%20gif.gif)
 <h3><a href="https://kate-chu.github.io/1_Min_Countdown_Timer/" target="_blank">Static Webpage</a></h3>
 
 <h3>Description</h3>
