@@ -1,6 +1,7 @@
 # Gacha
 
 ![image](https://github.com/Kate-Chu/Gacha/blob/main/img/intro%20gif.gif)
+
 <h3><a href="https://kate-chu.github.io/Gacha/" target="_blank">Static Webpage</a></h3>
 
 <h3>Description</h3>
@@ -19,7 +20,6 @@
   <li>Medium: <a href="https://medium.com/@amber.fragments/2022-daily-coding-challenge-35f753e9ea2c">2022 Daily Coding Challange</a></li>
 </ul>
 
-  
 <h3>Attribute</h3>
 <ul>
   <li><a href='https://www.freepik.com/photos/background'>Background photo created by rawpixel.com - www.freepik.com</a></li>
