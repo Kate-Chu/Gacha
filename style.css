@@ -72,7 +72,7 @@ body {
   position: absolute;
   top: -20%;
   left: 50%;
-  transform: translate(-50%, 400px);
+  transform: translate(-50%, 350px);
   width: 35rem;
   height: 55rem;
   /* background-image: url("https://image.freepik.com/free-photo/top-view-arrangement-cornflowers_23-2148615244.jpg"); */
@@ -138,7 +138,7 @@ body {
 @keyframes get-card {
   0% {
     filter: brightness(1);
-    transform: translate(-50%, 400px);
+    transform: translate(-50%, 350px);
   }
   20% {
     filter: brightness(2);
@@ -169,7 +169,7 @@ body {
   100% {
     filter: brightness(1);
     box-shadow: 0 0 5rem #fff;
-    transform: translate(-50%, 400px) rotate3d(0, 1, 0, 720deg);
+    transform: translate(-50%, 350px) rotate3d(0, 1, 0, 720deg);
     z-index: 10;
   }
 }

@@ -7,7 +7,7 @@ import {
 const card = document.querySelector(".card");
 const quotation = document.querySelector(".quotation");
 const author = document.querySelector(".author");
-const getCardY = 400;
+const getCardY = 350;
 // const backgroundImageData = ["top-view-spring-daisies-gerberas.jpeg"];
 const backgroundImageData = [
   "https://image.freepik.com/free-vector/hand-drawn-linear-engraved-floral-background_52683-71224.jpg",
@@ -47,7 +47,7 @@ function move(e) {
         );
       }
     } else {
-      setCustomProperty(card, "transform", "translate(-50%, 400px)");
+      setCustomProperty(card, "transform", "translate(-50%, 350px)");
       setCustomProperty(card, "filter", "brightness(1)");
     }
   }
@@ -67,7 +67,7 @@ document.addEventListener("mouseup", (e) => {
       setCustomProperty(
         card,
         "transform",
-        "translate(-50%, 400px) rotate3d(0, 1, 0, 1800deg)"
+        "translate(-50%, 350px) rotate3d(0, 1, 0, 1800deg)"
       );
       card.classList.add("card-get");
       // card.style.background = `url(${getBackgroundImage()})`;
