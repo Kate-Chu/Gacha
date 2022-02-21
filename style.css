@@ -31,7 +31,7 @@ body {
   background-size: cover;
   background-position-y: 0;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
   clip-path: polygon(
     0 0,
     0% 70%,
@@ -55,6 +55,7 @@ body {
   top: -20%;
   left: 50%;
   transform: translateX(-50%);
+  /* transform: translate(-50%, 100%) rotate3d(0); */
   --card-width: 35rem;
   height: 55rem;
   background-image: url(img/birds-nature-design.jpg);
@@ -137,6 +138,7 @@ body {
 }
 
 .card-get {
+  /* transform: translate(-50%, 100%) rotate3d(0); */
   animation: get-card 3s ease-in-out forwards;
 }
 
@@ -176,5 +178,52 @@ body {
     box-shadow: 0 0 5rem #fff;
     transform: translate(-50%, 100%) rotate3d(0, 1, 0, 720deg);
     z-index: 10;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .card {
+    transform: translate(-50%, 60%) scale(1.5);
+  }
+
+  @keyframes get-card {
+    0% {
+      filter: brightness(1);
+      transform: translate(-50%, 60%);
+    }
+    20% {
+      filter: brightness(2);
+      transform: translate(-50%, 90%) scale(1.2);
+      box-shadow: 0 0 5rem #fff;
+      z-index: 10;
+    }
+    40% {
+      filter: brightness(4.5);
+      transform: translate(-50%, 60%) scale(1.1);
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      box-shadow: 0 0 15rem #fff;
+    }
+    60% {
+      filter: brightness(4.5);
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      box-shadow: 0 0 15rem #fff;
+      box-shadow: 0 0 20rem #fff;
+      box-shadow: 0 0 25rem #fff;
+      box-shadow: 0 0 30rem #fff;
+    }
+    80% {
+      filter: brightness(2);
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      box-shadow: 0 0 15rem #fff;
+    }
+    100% {
+      filter: brightness(1);
+      box-shadow: 0 0 5rem #fff;
+      transform: translate(-50%, 60%) scale(1.5) rotate3d(0, 1, 0, 720deg);
+      z-index: 10;
+    }
   }
 }

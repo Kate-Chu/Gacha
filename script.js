@@ -1,3 +1,6 @@
+// screen.lockOrientation("landscape");
+
+const CLIENT_WIDTH = document.body.clientWidth;
 const BASIC_ELEMENT_LENGTH = 8; // 1 rem
 const CARD_HEIGHT = BASIC_ELEMENT_LENGTH * 55;
 const CARD_WIDTH = BASIC_ELEMENT_LENGTH * 35;
@@ -6,11 +9,17 @@ const drawer = document.querySelector("[data-drawer]");
 const card = document.querySelector("[data-card-wrapper]");
 const quotation = document.querySelector("[data-quotation]");
 const author = document.querySelector("[data-author]");
-const clientWidth = document.body.clientWidth;
 
-const getCardTransform = 1; // translateY: 100%
+let mouseY = 0;
+let touchY = 0;
+let isDown = false;
+let getCardTransform; // translateY
+
+// set getCardTransform
+if (CLIENT_WIDTH <= 414) getCardTransform = 0.6;
+else getCardTransform = 1;
+const scaleRatio = CLIENT_WIDTH / CARD_WIDTH;
 const getCardY = CARD_HEIGHT * getCardTransform;
-const scaleRatio = clientWidth / CARD_WIDTH;
 
 // const backgroundImageData = ["top-view-spring-daisies-gerberas.jpeg"];
 const backgroundImageData = [
@@ -24,10 +33,6 @@ const backgroundImageData = [
   "https://image.freepik.com/free-photo/beautiful-cherry_1182-1029.jpg",
   "https://image.freepik.com/free-photo/beautiful-cherry-blossom_181624-668.jpg",
 ];
-
-let mouseY = 0;
-let touchY = 0;
-let isDown = false;
 
 startInteraction();
 
@@ -98,8 +103,11 @@ function handleTouchMove(e) {
         );
       }
     } else {
-      setCustomProperty(card, "transform", "translate(-50%, 100%)");
-      setCustomProperty(card, "filter", "brightness(1)");
+      if (CLIENT_WIDTH <= 414) {
+        setCustomProperty(card, "transform", "translate(-50%, 60%)");
+      } else {
+        setCustomProperty(card, "filter", "brightness(1)");
+      }
     }
   }
 }
@@ -177,7 +185,7 @@ function handleTouchEnd(e) {
       setCustomProperty(
         card,
         "transform",
-        "translate(-50%, 100% ) rotate3d(0, 1, 0, 1800deg)"
+        "translate(-50%, 60%) rotate3d(0, 1, 0, 1800deg)"
       );
       card.classList.add("card-get"); // 得到卡片動畫(3s)開始
       let img = new Image();
