@@ -183,7 +183,7 @@ body {
 
 @media screen and (max-width: 414px) {
   .card {
-    transform: translate(-50%, 60%) scale(1.5);
+    transform: translate(-50%, 60%) scale(1.4);
   }
 
   @keyframes get-card {
@@ -222,7 +222,7 @@ body {
     100% {
       filter: brightness(1);
       box-shadow: 0 0 5rem #fff;
-      transform: translate(-50%, 60%) scale(1.5) rotate3d(0, 1, 0, 720deg);
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 720deg);
       z-index: 10;
     }
   }
