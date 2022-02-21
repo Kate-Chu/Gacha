@@ -2,7 +2,7 @@
 
 ![image](https://github.com/Kate-Chu/Gacha/blob/main/img/intro%20gif.gif)
 
-<h3><a href="https://kate-chu.github.io/Gacha/" target="_blank">Static Webpage</a></h3>
+<h3><a href="https://kate-chu.github.io/Gacha/" target="_blank">Get Your Quote</a></h3>
 
 <h3>Description</h3>
 <p>Pull a card and get a quotation for you.</p>
