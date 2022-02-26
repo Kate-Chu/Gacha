@@ -182,6 +182,10 @@ body {
 }
 
 @media screen and (max-width: 414px) {
+  .card.back {
+    transform: translate(-50%, 0) scale(1) rotate3d(0deg);
+  }
+
   .card {
     transform: translate(-50%, 60%) scale(1.4);
   }
