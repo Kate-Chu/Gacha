@@ -58,7 +58,7 @@ body {
   /* transform: translate(-50%, 100%) rotate3d(0); */
   --card-width: 35rem;
   height: 55rem;
-  background-image: url(img/birds-nature-design.jpg);
+  background-image: url(https://picsum.photos/500?random=1);
 
   background-size: cover;
   cursor: pointer;
