@@ -54,10 +54,11 @@ body {
   position: absolute;
   top: -20%;
   left: 50%;
-  transform: translate(-50%, 100%) rotate3d(0);
+  transform: translateX(-50%);
+  /* transform: translate(-50%, 100%) rotate3d(0); */
   --card-width: 35rem;
   height: 55rem;
-  background-image: url(img/background_img/flat-lay-spring-daisies-leaves.jpeg);
+  background-image: url(img/birds-nature-design.jpg);
 
   background-size: cover;
   cursor: pointer;
