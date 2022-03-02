@@ -58,7 +58,7 @@ body {
   /* transform: translate(-50%, 100%) rotate3d(0); */
   --card-width: 35rem;
   height: 55rem;
-  background-image: url(img/background_img/flat-lay-spring-daisies-leaves.jpeg);
+  background-image: url(img/birds-nature-design.jpg);
 
   background-size: cover;
   cursor: pointer;
@@ -204,7 +204,7 @@ body {
     }
     40% {
       filter: brightness(4.5);
-      transform: translate(-50%, 60%) scale(1.1);
+      transform: translate(-50%, 60%) scale(1.1) rotate3d(0, 1, 0, 288deg);
       box-shadow: 0 0 5rem #fff;
       box-shadow: 0 0 10rem #fff;
       box-shadow: 0 0 15rem #fff;
