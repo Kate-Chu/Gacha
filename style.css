@@ -196,18 +196,43 @@ body {
       filter: brightness(1);
       transform: translate(-50%, 60%);
     }
+    10% {
+      filter: brightness(2);
+      transform: translate(-50%, 90%) scale(1.2) rotate3d(0, 1, 0, 72deg);
+      box-shadow: 0 0 2.5rem #fff;
+      z-index: 10;
+    }
     20% {
       filter: brightness(2);
       transform: translate(-50%, 90%) scale(1.2) rotate3d(0, 1, 0, 144deg);
+      box-shadow: 0 0 2.5rem #fff;
       box-shadow: 0 0 5rem #fff;
       z-index: 10;
     }
+    30% {
+      filter: brightness(4.5);
+      box-shadow: 0 0 2.5rem #fff;
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      transform: translate(-50%, 60%) scale(1.1) rotate3d(0, 1, 0, 216deg);
+    }
     40% {
       filter: brightness(4.5);
+      box-shadow: 0 0 2.5rem #fff;
       box-shadow: 0 0 5rem #fff;
       box-shadow: 0 0 10rem #fff;
       box-shadow: 0 0 15rem #fff;
       transform: translate(-50%, 60%) scale(1.1) rotate3d(0, 1, 0, 288deg);
+    }
+    50% {
+      filter: brightness(4.5);
+      box-shadow: 0 0 2.5rem #fff;
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      box-shadow: 0 0 15rem #fff;
+      box-shadow: 0 0 20rem #fff;
+      box-shadow: 0 0 25rem #fff;
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 360deg);
     }
     60% {
       filter: brightness(4.5);
@@ -217,19 +242,34 @@ body {
       box-shadow: 0 0 20rem #fff;
       box-shadow: 0 0 25rem #fff;
       box-shadow: 0 0 30rem #fff;
-      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 432deg);
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 72deg);
+    }
+    70% {
+      filter: brightness(4.5);
+      box-shadow: 0 0 2.5rem #fff;
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      box-shadow: 0 0 15rem #fff;
+      box-shadow: 0 0 20rem #fff;
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 144deg);
     }
     80% {
       filter: brightness(2);
       box-shadow: 0 0 5rem #fff;
       box-shadow: 0 0 10rem #fff;
       box-shadow: 0 0 15rem #fff;
-      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 576deg);
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 216deg);
+    }
+    90% {
+      filter: brightness(2);
+      box-shadow: 0 0 5rem #fff;
+      box-shadow: 0 0 10rem #fff;
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 288deg);
     }
     100% {
       filter: brightness(1);
       box-shadow: 0 0 5rem #fff;
-      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 720deg);
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 360deg);
       z-index: 10;
     }
   }
