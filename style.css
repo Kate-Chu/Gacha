@@ -241,7 +241,7 @@ body {
       box-shadow: 0 0 5rem #fff;
       box-shadow: 0 0 10rem #fff;
       box-shadow: 0 0 15rem #fff;
-      transform: translate(-50%, 60%) rotate3d(0, 1, 0, 180deg);
+      transform: translate(-50%, 60%) scale(1.4) rotate3d(0, 1, 0, 180deg);
     }
     100% {
       filter: brightness(1);
