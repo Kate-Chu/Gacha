@@ -193,7 +193,7 @@ body {
 
   .card-get {
     transform: translate(-50%, 100%) rotate3d(0);
-    animation: get-card 3s ease-in-out forwards;
+    animation: get-card 2s ease-in-out forwards;
   }
 
   @keyframes get-card {
