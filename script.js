@@ -16,7 +16,7 @@ let isDown = false;
 let getCardTransform; // translateY
 
 // set getCardTransform
-if (CLIENT_WIDTH <= 414) getCardTransform = 0.6;
+if (CLIENT_WIDTH <= 414) getCardTransform = 0.5;
 else getCardTransform = 0.9;
 const scaleRatio = CLIENT_WIDTH / CARD_WIDTH;
 const getCardY = CARD_HEIGHT * getCardTransform;
