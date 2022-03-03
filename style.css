@@ -182,9 +182,9 @@ body {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 440px) {
   .card.back {
-    transform: translate(-50%, 0) scale(1) rotate3d(0deg);
+    transform: translate(-50%, 0);
   }
 
   .card {
@@ -199,14 +199,14 @@ body {
   @keyframes get-card {
     0% {
       filter: brightness(1);
-      transform: translate(-50%, 90%) scale(1) rotate3d(0, 1, 0, 180deg);
+      transform: translate(-50%, 60%) scale(1) rotate3d(0, 1, 0, 180deg);
     }
     20% {
       filter: brightness(2);
-      transform: translate(-50%, 90%) scale(1.2) rotate3d(0, 1, 0, 360deg);
       box-shadow: 0 0 2.5rem #fff;
       box-shadow: 0 0 5rem #fff;
       z-index: 10;
+      transform: translate(-50%, 80%) scale(1.2) rotate3d(0, 1, 0, 360deg);
     }
     40% {
       filter: brightness(4.5);
