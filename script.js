@@ -187,7 +187,6 @@ function handleTouchEnd(e) {
       let img = new Image();
       img.src = getBackgroundImage();
       setTimeout(() => {
-        drawer.classList.add("hide");
         // 1.3 秒後向 api 發送請求取得 quotation
         card.style.backgroundImage = `url("${img.src}")`;
         axios
@@ -212,6 +211,7 @@ function handleTouchEnd(e) {
             console.log(error);
           });
         card.classList.toggle("back");
+        drawer.classList.add("hide");
       }, 1500);
     }
   }
