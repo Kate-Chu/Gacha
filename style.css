@@ -86,7 +86,7 @@ body {
   box-shadow: 0 0 0.5rem #3b5761;
   border-radius: 0.2rem;
   filter: brightness(1);
-  transform: translate(-50%, 0) scale(1) rotate3d(0deg);
+  transform: translate(-50%, 0) scale(1);
 }
 
 .background-color {
