@@ -199,7 +199,6 @@ body {
   @keyframes get-card {
     0% {
       filter: brightness(1);
-      transform: translate(-50%, 60%);
       transform: translate(-50%, 90%) scale(1) rotate3d(0, 1, 0, 180deg);
     }
     20% {
