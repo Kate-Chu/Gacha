@@ -128,11 +128,7 @@ function handleMouseUp(e) {
     } else {
       // 取得卡片
       document.removeEventListener("transitionend", handleMouseMove);
-      setCustomProperty(
-        card,
-        "transform",
-        "translate(-50%, 100%) rotate3d(0, 1, 0, 1800deg)"
-      );
+      setCustomProperty(card, "transform", "translate(-50%, 100%)");
       card.classList.add("card-get"); // 得到卡片動畫(3s)開始
       let img = new Image();
       img.src = getBackgroundImage();
